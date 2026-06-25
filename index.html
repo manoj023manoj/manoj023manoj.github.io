@@ -1,202 +1,1643 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dr. R. Manojkumar | Academic Website</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f5f7fb;
-    color:#333;
-    line-height:1.8;
+
+font-family:'Poppins',sans-serif;
+background:#f6f8fc;
+color:#333;
+line-height:1.8;
+
 }
 
-header{
-    background:#0d3b66;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-
-header h1{
-    margin:0;
-    font-size:42px;
-}
+/*================ NAVIGATION ================*/
 
 nav{
-    background:white;
-    text-align:center;
-    padding:15px;
-    position:sticky;
-    top:0;
-    box-shadow:0px 2px 6px rgba(0,0,0,0.1);
+
+position:fixed;
+top:0;
+width:100%;
+background:#0b3d91;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+
+box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+
 }
 
-nav a{
-    margin:0 15px;
-    text-decoration:none;
-    color:#0d3b66;
-    font-weight:bold;
+.logo{
+
+color:white;
+font-size:24px;
+font-weight:700;
+
 }
 
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
+nav ul{
+
+display:flex;
+list-style:none;
+
 }
+
+nav ul li{
+
+margin-left:25px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#FFD54F;
+
+}
+
+/*================ HERO =================*/
+
+.hero{
+
+height:100vh;
+
+background:linear-gradient(rgba(11,61,145,.88),rgba(11,61,145,.88)),
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+margin-bottom:15px;
+
+}
+
+.hero h3{
+
+font-weight:400;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+margin-bottom:30px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:14px 35px;
+
+background:#FFD54F;
+
+color:#222;
+
+text-decoration:none;
+
+border-radius:30px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+transform:translateY(-3px);
+
+}
+
+/*================ SECTION ================*/
 
 section{
-    background:white;
-    margin:30px 0;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+
+padding:90px 10%;
+
 }
 
-h2{
-    color:#0d3b66;
+.section-title{
+
+text-align:center;
+
+font-size:38px;
+
+margin-bottom:40px;
+
+color:#0b3d91;
+
 }
+
+/*================ ABOUT =================*/
+
+.about{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:30px;
+
+}
+
+.about p{
+
+text-align:justify;
+
+font-size:18px;
+
+}
+
+/*================ RESEARCH CARDS =================*/
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:15px;
+
+padding:30px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h3{
+
+color:#0b3d91;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+font-size:15px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+margin-top:20px;
+
+text-decoration:none;
+
+color:#0b3d91;
+
+font-weight:bold;
+
+}
+
+/*================ FOOTER =================*/
 
 footer{
-    background:#0d3b66;
-    color:white;
-    text-align:center;
-    padding:20px;
+
+background:#0b3d91;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-
-<h1>Dr. R. Manojkumar</h1>
-
-<p>
-Assistant Professor<br>
-Department of Electrical and Electronics Engineering<br>
-BVRIT Hyderabad College of Engineering for Women
-</p>
-
-<p>
-Power Systems • Energy Management • Smart Grids • Artificial Intelligence • Educational Research
-</p>
-
-</header>
-
 <nav>
-<a href="#about">About</a>
-<a href="#power">Power Systems</a>
-<a href="#energy">Energy Management</a>
-<a href="#smart">Smart Grids</a>
-<a href="#ai">AI for Power Systems</a>
-<a href="#education">Educational Research</a>
-<a href="#contact">Contact</a>
-</nav>
 
-<div class="container">
+<div class="logo">
 
-<section id="about">
-
-<h2>Research Interests</h2>
-
-<ul>
-<li>Operation and Planning of Power Systems</li>
-<li>Energy Management Using Battery Energy Storage Systems</li>
-<li>Optimal Power Flow</li>
-<li>Voltage Control</li>
-<li>Smart Grids and Power Electronics</li>
-<li>Hybrid AC/DC Microgrids</li>
-<li>Artificial Intelligence for Power Systems</li>
-<li>Teaching and Learning Methodologies</li>
-<li>Faculty Development and Governance</li>
-<li>AI in Education</li>
-</ul>
-
-</section>
-
-<section id="power">
-
-<h2>Power Systems</h2>
-
-<p>
-Research on power system operation, optimal power flow, state estimation and voltage control.
-</p>
-
-</section>
-
-<section id="energy">
-
-<h2>Energy Management</h2>
-
-<p>
-Research on battery energy storage systems, peak shaving, demand response and microgrid energy management.
-</p>
-
-</section>
-
-<section id="smart">
-
-<h2>Smart Grids & Power Electronics</h2>
-
-<p>
-Research on smart transformers, hybrid AC/DC systems and power quality improvement.
-</p>
-
-</section>
-
-<section id="ai">
-
-<h2>Artificial Intelligence for Power Systems</h2>
-
-<p>
-Applications of machine learning and artificial intelligence in energy systems and smart grids.
-</p>
-
-</section>
-
-<section id="education">
-
-<h2>Educational Research</h2>
-
-<p>
-Research on active learning, digital pedagogies, faculty development, educational leadership and AI in education.
-</p>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>
-<b>Institutional Email:</b><br>
-manojkumar.r@bvrithyderabad.edu.in
-</p>
-
-<p>
-<b>Personal Email:</b><br>
-manoj023manoj@gmail.com
-</p>
-
-<p>
-LinkedIn | Google Scholar | Scopus Author Profile
-</p>
-
-</section>
+Dr. R. Manojkumar
 
 </div>
 
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#research">Research</a></li>
+
+<li><a href="#patents">Patents</a></li>
+
+<li><a href="#editorial">Editorial</a></li>
+
+<li><a href="#teaching">Teaching</a></li>
+
+<li><a href="#awards">Awards</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Dr. R. Manojkumar</h1>
+
+<h3>Assistant Professor | Electrical and Electronics Engineering</h3>
+
+<p>
+
+Research in Power Systems, Energy Management, Smart Grids, Artificial Intelligence, and Educational Research.
+
+</p>
+
+<a href="#research" class="button">
+
+Explore Research
+
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">
+
+About
+
+</h2>
+
+<div class="about">
+
+<p>
+
+Welcome to my academic website.
+
+My research focuses on developing intelligent and sustainable solutions for modern electrical power systems through advanced optimization techniques, battery energy storage systems, smart grids, renewable energy integration, artificial intelligence, and power electronics. Alongside engineering research, I actively contribute to educational research in engineering education, active learning, faculty development, governance, and AI-assisted teaching methodologies.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="research">
+
+<h2 class="section-title">
+
+Research Areas
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>⚡ Power Systems</h3>
+
+<p>
+
+Operation and planning of power systems, voltage control, optimal power flow, state estimation, and distribution networks.
+
+</p>
+
+<a href="#powersystems">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🔋 Energy Management</h3>
+
+<p>
+
+Battery energy storage systems, demand response, peak shaving, energy optimization, and hybrid AC/DC microgrids.
+
+</p>
+
+<a href="#energymanagement">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>⚙ Smart Grids & Power Electronics</h3>
+
+<p>
+
+Smart transformers, distributed generation, converter control, hybrid grids, and power quality improvement.
+
+</p>
+
+<a href="#smartgrids">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🤖 Artificial Intelligence</h3>
+
+<p>
+
+AI applications in power systems, digital twins, predictive maintenance, smart cities, healthcare, and cybersecurity.
+
+</p>
+
+<a href="#ai">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🎓 Educational Research</h3>
+
+<p>
+
+Teaching and learning, faculty development, educational leadership, governance, AI in education, and digital pedagogy.
+
+</p>
+
+<a href="#education">
+
+Explore →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= POWER SYSTEMS ================= -->
+
+<section id="powersystems">
+
+<h2 class="section-title">
+⚡ Power Systems
+</h2>
+
+<p style="text-align:justify;margin-bottom:35px;">
+
+My research in Power Systems focuses on the operation, planning, monitoring, and control of modern electrical distribution systems. The work includes optimal power flow, voltage regulation, state estimation, renewable energy integration, low-voltage distribution networks, and intelligent control strategies for improving system reliability and efficiency.
+
+</p>
+
+<!-- Journal Articles -->
+
+<div class="card">
+
+<h3>📖 Journal Articles</h3>
+
+<ol>
+
+<li>
+<b>Net Load Forecast Error Compensation for Peak Shaving in a Grid-Connected PV Storage System</b><br>
+IEEE Transactions on Power Systems, 2024 (Q1)<br>
+<a href="https://doi.org/10.1109/TPWRS.2023.3317309" target="_blank">
+Read Paper
+</a>
+</li>
+
+<br>
+
+<li>
+<b>Optimal Peak Shaving Control Using Dynamic Demand and Feed-In Limits for Grid-Connected PV Sources With Batteries</b><br>
+IEEE Systems Journal, 2021 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Voltage Control Using Smart Transformer via Dynamic Optimal Setpoints and Limit Tolerance in a Residential Distribution Network with PV Sources</b><br>
+IET Generation, Transmission & Distribution, 2020 (Q2)
+</li>
+
+<br>
+
+<li>
+<b>Advantage of Extended Kalman Filter over Discrete Kalman Filter in Dynamic State Estimation of Power System Network</b><br>
+International Journal of Control Theory and Applications, 2016
+</li>
+
+<br>
+
+<li>
+<b>An Overview of Power System State Estimation from Static State Estimation to Dynamic State Estimation</b><br>
+International Journal of Pure and Applied Mathematics, 2017
+</li>
+
+<br>
+
+<li>
+<b>A Working Methodology of Applying Unscented Kalman Filter Technique for Power System Dynamic State Estimation</b><br>
+International Journal of Pure and Applied Mathematics, 2017
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Conference Papers -->
+
+<div class="card">
+
+<h3>🎤 Conference Papers</h3>
+
+<ol>
+
+<li>
+
+Voltage Control Using Smart Transformer for Increasing Photovoltaic Penetration in a Distribution Grid<br>
+
+ISAP 2019
+
+</li>
+
+<br>
+
+<li>
+
+Optimal Demand Response Using Dynamic Electricity Price Limit in a Hybrid AC/DC System<br>
+
+National Power Systems Conference (NPSC), 2020
+
+</li>
+
+<br>
+
+<li>
+
+Optimal Placement of Smart Transformer Low Voltage Converter in Meshed Hybrid Distribution Network<br>
+
+ECCE Asia, 2021
+
+</li>
+
+<br>
+
+<li>
+
+Optimal Power Management for Islanded Operation of Smart Transformer-Based Meshed Hybrid LV Microgrid<br>
+
+ECCE Asia, 2021
+
+</li>
+
+<br>
+
+<li>
+
+Voltage Control in Low Voltage Distribution Systems Using Smart Power Converter<br>
+
+ICEECT, 2024
+
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Book Chapters -->
+
+<div class="card">
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+
+Grid Stability and Power Quality Improvement in Electric Distribution Systems Using Smart Transformer<br>
+
+Elsevier, 2025
+
+</li>
+
+<li>
+
+Voltage Control in Smart City Low Voltage Distribution Networks Using Artificial Intelligence and Power Electronics<br>
+
+IGI Global, 2026
+
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Patents -->
+
+<div class="card">
+
+<h3>💡 Related Patents</h3>
+
+<ol>
+
+<li>
+
+Optimized Rule-Based Voltage Control Method Through Voltage Set Points and Limit Differences (2024)
+
+</li>
+
+<li>
+
+Adaptive Power Control of Electric Vehicle Charging Stations Based on Voltage Sensitivity (2026)
+
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- ================= ENERGY MANAGEMENT ================= -->
+
+<section id="energymanagement">
+
+<h2 class="section-title">
+🔋 Energy Management
+</h2>
+
+<p style="text-align:justify;margin-bottom:35px;">
+
+My research in Energy Management focuses on intelligent battery energy storage systems (BESS), demand response, peak shaving, renewable energy integration, hybrid AC/DC microgrids, and optimal scheduling techniques for improving economic operation and grid reliability. The work combines optimization algorithms, artificial intelligence, and smart energy management strategies for modern electrical distribution systems.
+
+</p>
+
+<!-- Journal Articles -->
+
+<div class="card">
+
+<h3>📖 Journal Articles</h3>
+
+<ol>
+
+<li>
+<b>Techno-economic Analysis of a Grid-Connected Low-Voltage Distribution System Employing Optimal Peak Shaving Through a Centralized Battery Energy Storage System</b><br>
+Journal of Energy Storage, 2026 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Optimized Rule-Based Energy Management for AC/DC Hybrid Microgrids Using Price-Based Demand Response</b><br>
+e-Prime – Advances in Electrical Engineering, Electronics and Energy, 2025 (Q2)
+</li>
+
+<br>
+
+<li>
+<b>Optimised Rule-Based Peak Shaving and Its Impact on Annual Energy Cost Reduction</b><br>
+International Journal of Ambient Energy, 2024 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Optimal Peak-Shaving Control Strategy Utilizing an Efficient PV-BES System for Dynamic Demand Response in Smart Malaysian Commercial Buildings</b><br>
+Sustainable Cities and Society, 2024 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Rule-Based Peak Shaving Using Master-Slave Level Optimization in a Diesel Generator Supplied Microgrid</b><br>
+IEEE Transactions on Power Systems, 2022 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Optimal Demand Response in a Residential PV Storage System Using Energy Pricing Limits</b><br>
+IEEE Transactions on Industrial Informatics, 2021 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Optimal Peak Shaving Control Using Dynamic Demand and Feed-In Limits for Grid-Connected PV Sources With Batteries</b><br>
+IEEE Systems Journal, 2021 (Q1)
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Conference Papers -->
+
+<div class="card">
+
+<h3>🎤 Conference Papers</h3>
+
+<ol>
+
+<li>
+Price-Based Demand Response Using an Arduino-Controlled Energy Management System<br>
+IEEE GECOST, 2026
+</li>
+
+<br>
+
+<li>
+Optimizing Energy Management Through Vehicle-to-Grid and Grid-to-Vehicle Integration<br>
+IEEE ITEC India, 2026
+</li>
+
+<br>
+
+<li>
+Low Energy Building Management Using Arduino Microcontroller<br>
+IEEE ICPEE, 2026
+</li>
+
+<br>
+
+<li>
+Rule-Based Peak Shaving Using Battery Energy Storage with a Case Study Analysis<br>
+ICPEEV, 2024
+</li>
+
+<br>
+
+<li>
+Optimal Demand Response Using Dynamic Electricity Price Limit in a Hybrid AC/DC System<br>
+National Power Systems Conference (NPSC), 2020
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Book Chapters -->
+
+<div class="card">
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+Rule-Based Energy Management Optimized with Artificial Intelligence and a Case Study Analysis<br>
+IGI Global Scientific Publishing, 2025
+</li>
+
+<br>
+
+<li>
+Grid Stability and Power Quality Improvement in Electric Distribution Systems Using Smart Transformer<br>
+Elsevier, 2025
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Patents -->
+
+<div class="card">
+
+<h3>💡 Related Patents</h3>
+
+<ol>
+
+<li>
+Optimized Scheduling of Battery Energy Storage Using Initial State of Charge as a Control Variable in Energy Management Systems (2025)
+</li>
+
+<br>
+
+<li>
+Electric Vehicle Charging Management System with Demand Response and Renewable Energy Prioritization (2024)
+</li>
+
+<br>
+
+<li>
+Adaptive Power Control of Electric Vehicle Charging Stations Based on Voltage Sensitivity (2026)
+</li>
+
+<br>
+
+<li>
+Hybrid Fuzzy Logic and Machine Learning Based Controller for Power Flow Management and Communication Optimization in V2G-Enabled Smart Grids (2024)
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- ================= SMART GRIDS & POWER ELECTRONICS ================= -->
+
+<section id="smartgrids">
+
+<h2 class="section-title">
+⚙️ Smart Grids & Power Electronics
+</h2>
+
+<p style="text-align:justify;margin-bottom:35px;">
+
+My research in Smart Grids and Power Electronics focuses on intelligent distribution networks, smart transformers, hybrid AC/DC microgrids, distributed energy resources, power electronic converters, and advanced control techniques for improving grid stability, reliability, power quality, and renewable energy integration.
+
+</p>
+
+<!-- Journal Articles -->
+
+<div class="card">
+
+<h3>📖 Journal Articles</h3>
+
+<ol>
+
+<li>
+<b>Power Loss Minimization in Smart Transformer Enabled Low Voltage Islanded Meshed Hybrid Microgrid</b><br>
+IEEE Access, 2022 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Impact of Optimal Control of Distributed Generation Converters in Smart Transformer Based Meshed Hybrid Distribution Network</b><br>
+IEEE Access, 2021 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Voltage Control Using Smart Transformer via Dynamic Optimal Setpoints and Limit Tolerance in a Residential Distribution Network with PV Sources</b><br>
+IET Generation, Transmission & Distribution, 2020 (Q2)
+</li>
+
+<br>
+
+<li>
+<b>Rule-Based Peak Shaving Using Master-Slave Level Optimization in a Diesel Generator Supplied Microgrid</b><br>
+IEEE Transactions on Power Systems, 2022 (Q1)
+</li>
+
+<br>
+
+<li>
+<b>Net Load Forecast Error Compensation for Peak Shaving in a Grid-Connected PV Storage System</b><br>
+IEEE Transactions on Power Systems, 2024 (Q1)
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Conference Papers -->
+
+<div class="card">
+
+<h3>🎤 Conference Papers</h3>
+
+<ol>
+
+<li>
+Optimal Placement of Smart Transformer Low Voltage Converter in Meshed Hybrid Distribution Network<br>
+IEEE ECCE Asia, 2021
+</li>
+
+<br>
+
+<li>
+Optimal Power Management for Islanded Operation of Smart Transformer-Based Meshed Hybrid LV Microgrid<br>
+IEEE ECCE Asia, 2021
+</li>
+
+<br>
+
+<li>
+Voltage Control Using Smart Transformer for Increasing Photovoltaic Penetration in a Distribution Grid<br>
+IEEE ISAP, 2019
+</li>
+
+<br>
+
+<li>
+Power Management of a Smart Transformer-Based Ship Microgrid<br>
+National Power Electronics Conference (NPEC), IIT Guwahati, 2023
+</li>
+
+<br>
+
+<li>
+Voltage Control in Low Voltage Distribution Systems Using Smart Power Converter<br>
+IEEE ICEECT, 2024
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Book Chapters -->
+
+<div class="card">
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+<b>Grid Stability and Power Quality Improvement in Electric Distribution Systems Using Smart Transformer</b><br>
+Elsevier, 2025
+</li>
+
+<br>
+
+<li>
+<b>Voltage Control in Smart City Low Voltage Distribution Networks Using Artificial Intelligence and Power Electronics</b><br>
+IGI Global Scientific Publishing, 2026
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- Patents -->
+
+<div class="card">
+
+<h3>💡 Related Patents</h3>
+
+<ol>
+
+<li>
+Optimized Rule-Based Voltage Control Method Through Voltage Set Points and Limit Differences (2024)
+</li>
+
+<br>
+
+<li>
+Electric Vehicle Charging Management System with Demand Response and Renewable Energy Prioritization (2024)
+</li>
+
+<br>
+
+<li>
+Adaptive Power Control of Electric Vehicle Charging Stations Based on Voltage Sensitivity (2026)
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- ================= ARTIFICIAL INTELLIGENCE ================= -->
+
+<section id="ai">
+
+<h2 class="section-title">
+🤖 Artificial Intelligence
+</h2>
+
+<p style="text-align:justify;margin-bottom:35px;">
+
+My research in Artificial Intelligence focuses on developing intelligent algorithms and data-driven solutions for power systems, renewable energy integration, smart cities, healthcare, cybersecurity, and engineering applications. The work integrates machine learning, deep learning, federated learning, digital twins, optimization techniques, and predictive analytics to improve system performance, reliability, and sustainability.
+
+</p>
+
+<!-- ================= AI FOR POWER SYSTEMS ================= -->
+
+<div class="card">
+
+<h2 style="color:#0b3d91;">AI for Power Systems</h2>
+
+<p>
+
+Applications of Artificial Intelligence in electrical power systems, battery energy storage systems, renewable energy integration, smart grids, and intelligent energy management.
+
+</p>
+
+<h3>📖 Journal Articles</h3>
+
+<ol>
+
+<li>
+
+Load Forecasting for Home Energy Management Using Light Gradient Boosting Machine Learning Algorithm
+
+<br>
+
+International Journal of Ambient Energy, 2025 (Q1)
+
+</li>
+
+</ol>
+
+<h3>🎤 Conference Papers</h3>
+
+<ol>
+
+<li>
+
+Fault Diagnosis in Power Transformers Using Deep Learning Model Considering Imbalanced DGA Data
+
+<br>
+
+IEEE UPCON, 2026
+
+</li>
+
+<li>
+
+Artificial Intelligence and Internet of Things Applications in Smart Grid Security: A Survey
+
+<br>
+
+Springer, 2023
+
+</li>
+
+</ol>
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+
+Rule-Based Energy Management Optimized with Artificial Intelligence and a Case Study Analysis
+
+<br>
+
+IGI Global, 2025
+
+</li>
+
+<li>
+
+Voltage Control in Smart City Low Voltage Distribution Networks Using Artificial Intelligence and Power Electronics
+
+<br>
+
+IGI Global, 2026
+
+</li>
+
+<li>
+
+Artificial Intelligence and Digital Twin Synergy for Predictive Maintenance and Fault Detection in Wind Turbines
+
+<br>
+
+IGI Global, 2026
+
+</li>
+
+<li>
+
+AI-Digital Twin Synergy for Smart and Autonomous Wind Energy Systems
+
+<br>
+
+IGI Global, 2026
+
+</li>
+
+</ol>
+
+<h3>💡 Patents</h3>
+
+<ol>
+
+<li>
+
+Hybrid Adaptive Edge-AI Battery Health Monitoring and Failure Prediction System (2026)
+
+</li>
+
+<li>
+
+Hybrid Fuzzy Logic and Machine Learning Based Controller for Power Flow Management and Communication Optimization in V2G Enabled Smart Grids (2024)
+
+</li>
+
+<li>
+
+Federated Learning Approach for Distributed Anomaly Detection in V2G Communication Networks (2026)
+
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- ================= AI APPLICATIONS ================= -->
+
+<div class="card">
+
+<h2 style="color:#0b3d91;">AI Applications</h2>
+
+<p>
+
+Application of Artificial Intelligence techniques in healthcare, cybersecurity, software engineering, intelligent transportation systems, educational technologies, and smart city infrastructure.
+
+</p>
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+
+Next Generation Healthcare Systems Driven by Metaverse, Artificial Intelligence and Federated Learning
+
+</li>
+
+<li>
+
+Machine Learning and Federated Learning in Industrial Cybersecurity
+
+</li>
+
+<li>
+
+Role of Digital Twins in Predictive Maintenance and Cyber Resilience
+
+</li>
+
+<li>
+
+Rethinking Software Engineering Skills in the Age of AI
+
+</li>
+
+<li>
+
+Building Ethical Awareness in AI-Enhanced Educator Training for Responsible and Inclusive Learning Environments
+
+</li>
+
+</ol>
+
+<h3>🎤 Conference Papers</h3>
+
+<ol>
+
+<li>
+
+Artificial Intelligence and Internet of Things Applications in Smart Grid Security
+
+</li>
+
+</ol>
+
+<h3>💡 Patents</h3>
+
+<ol>
+
+<li>
+
+Hybrid Adaptive Edge-AI Battery Health Monitoring and Failure Prediction System
+
+</li>
+
+<li>
+
+Vehicle Accident Detection and Overspeed Alert System
+
+</li>
+
+<li>
+
+Dual-Mode Intelligent Robot with ML-Based Safety Control
+
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- ================= EDUCATIONAL RESEARCH ================= -->
+
+<section id="education">
+
+<h2 class="section-title">
+🎓 Educational Research
+</h2>
+
+<p style="text-align:justify;margin-bottom:35px;">
+
+My educational research focuses on innovative teaching and learning practices, faculty development, higher education leadership, governance, curriculum innovation, digital pedagogies, and responsible integration of artificial intelligence in engineering education. The objective is to enhance student engagement, improve learning outcomes, and support sustainable academic excellence.
+
+</p>
+
+<!-- ================= TEACHING & LEARNING ================= -->
+
+<div class="card">
+
+<h2 style="color:#0b3d91;">
+Teaching & Learning
+</h2>
+
+<p>
+
+Research on innovative pedagogical practices, active learning strategies, student engagement, outcome-based education, and technology-enhanced learning.
+
+</p>
+
+<h3>📖 Journal Articles</h3>
+
+<ol>
+
+<li>
+Open Discussion Forums and Effective Group Division for Improved Student Engagement in Teaching Learning Process
+<br>
+Journal of Engineering Education Transformations (Scopus)
+</li>
+
+</ol>
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+Inclusive Instructional Design Through Digital Pedagogies and Active Learning Approaches
+<br>
+IGI Global Scientific Publishing
+</li>
+
+<li>
+Building Ethical Awareness in AI-Enhanced Educator Training for Responsible and Inclusive Learning Environments
+<br>
+IGI Global Scientific Publishing
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- ================= FACULTY DEVELOPMENT ================= -->
+
+<div class="card">
+
+<h2 style="color:#0b3d91;">
+Faculty Development
+</h2>
+
+<p>
+
+Research on faculty empowerment, professional development, institutional effectiveness, and academic excellence in higher education.
+
+</p>
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+Empowering Faculty for Evolving Roles in Higher Education Governance
+</li>
+
+<li>
+Integrated Planning and Management Strategies From Leadership to Faculty Stakeholders
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- ================= LEADERSHIP & GOVERNANCE ================= -->
+
+<div class="card">
+
+<h2 style="color:#0b3d91;">
+Educational Leadership & Governance
+</h2>
+
+<p>
+
+Research on higher education governance, institutional planning, leadership strategies, quality assurance, and policy implementation.
+
+</p>
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+Integrated Planning and Management Strategies From Leadership to Faculty Stakeholders
+</li>
+
+<li>
+Empowering Faculty for Evolving Roles in Higher Education Governance
+</li>
+
+</ol>
+
+</div>
+
+<br>
+
+<!-- ================= AI IN EDUCATION ================= -->
+
+<div class="card">
+
+<h2 style="color:#0b3d91;">
+Artificial Intelligence in Education
+</h2>
+
+<p>
+
+Research on responsible use of artificial intelligence in higher education, educator training, digital transformation, educational technologies, and AI-assisted learning environments.
+
+</p>
+
+<h3>📚 Book Chapters</h3>
+
+<ol>
+
+<li>
+Building Ethical Awareness in AI-Enhanced Educator Training for Responsible and Inclusive Learning Environments
+</li>
+
+<li>
+Rethinking Software Engineering Skills in the Age of Artificial Intelligence
+</li>
+
+<li>
+Inclusive Instructional Design Through Digital Pedagogies and Active Learning Approaches
+</li>
+
+</ol>
+
+<h3>💡 Related Patents</h3>
+
+<ol>
+
+<li>
+Energy-Efficient Timetable Generation System Using Artificial Intelligence (2025)
+</li>
+
+<li>
+Artificial Intelligence Enabled Smart Educational Management Platform (Future Work)
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- ================= EDITORIAL & REVIEWER ACTIVITIES ================= -->
+
+<section id="editorial">
+
+<h2 class="section-title">
+Editorial & Reviewer Activities
+</h2>
+
+<p style="text-align:justify;margin-bottom:35px;">
+
+I actively contribute to the scholarly community through editorial board memberships, guest editorships, and peer-review activities for leading international journals in electrical engineering, energy systems, artificial intelligence, and interdisciplinary research.
+
+</p>
+
+<div class="card">
+
+<h3>Editorial Positions</h3>
+
+<ul>
+
+<li>Editorial Board Member – Scientific Reports (Nature Portfolio)</li>
+
+<li>Early Career Editor – International Journal of Ambient Energy</li>
+
+<li>Guest Editor – PLOS ONE</li>
+
+</ul>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>Reviewer for International Journals</h3>
+
+<ul>
+
+<li>IEEE Transactions on Smart Grid</li>
+
+<li>IEEE Transactions on Industrial Informatics</li>
+
+<li>IEEE Systems Journal</li>
+
+<li>IEEE Access</li>
+
+<li>IEEE Open Journal of the Industrial Electronics Society</li>
+
+<li>Applied Energy</li>
+
+<li>Renewable Energy</li>
+
+<li>Sustainable Cities and Society</li>
+
+<li>Journal of Energy Storage</li>
+
+<li>Energy</li>
+
+<li>Electric Power Systems Research</li>
+
+<li>International Journal of Electrical Power & Energy Systems</li>
+
+<li>Engineering Applications of Artificial Intelligence</li>
+
+<li>International Journal of Ambient Energy</li>
+
+<li>Scientific Reports</li>
+
+<li>PLOS ONE</li>
+
+<li>and several other international journals.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<p style="text-align:justify;margin-bottom:35px;">
+
+Thank you for visiting my academic website. I welcome opportunities for research collaboration, interdisciplinary projects, peer-review activities, invited talks, and academic partnerships in the areas of Power Systems, Energy Management, Smart Grids, Artificial Intelligence, and Educational Research.
+
+</p>
+
+<div class="card">
+
+<h3>Academic Affiliation</h3>
+
+<p>
+
+<b>Dr. R. Manojkumar</b><br>
+
+Assistant Professor<br>
+
+Department of Electrical and Electronics Engineering<br>
+
+BVRIT Hyderabad College of Engineering for Women<br>
+
+Hyderabad, Telangana, India
+
+</p>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>Email</h3>
+
+<p>
+
+<b>Institutional Email</b><br>
+
+<a href="mailto:manojkumar.r@bvrithyderabad.edu.in">
+manojkumar.r@bvrithyderabad.edu.in
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+<b>Personal Email</b><br>
+
+<a href="mailto:manoj023manoj@gmail.com">
+manoj023manoj@gmail.com
+</a>
+
+</p>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>Research Profiles</h3>
+
+<ul style="list-style:none; padding-left:0; line-height:2.2;">
+
+<li>🎓 <a href="https://scholar.google.com/citations?user=FI4jupoAAAAJ" target="_blank">Google Scholar</a></li>
+
+<li>🔗 <a href="https://www.linkedin.com/in/manojkumarrampelli/" target="_blank">LinkedIn</a></li>
+
+<li>🆔 <a href="https://orcid.org/" target="_blank">ORCID</a></li>
+
+<li>📚 <a href="https://www.scopus.com/" target="_blank">Scopus Author Profile</a></li>
+
+<li>📖 <a href="https://www.webofscience.com/" target="_blank">Web of Science Researcher Profile</a></li>
+
+</ul>
+
+</div>
+
+<br>
+
+<div class="card" style="background:#0b3d91;color:white;text-align:center;">
+
+<h2 style="color:white;">
+Interested in Collaboration?
+</h2>
+
+<p style="font-size:17px;">
+
+I welcome collaborations with researchers, academic institutions, industry professionals, and students working in the areas of:
+
+</p>
+
+<p style="font-size:18px; font-weight:600;">
+
+⚡ Power Systems &nbsp; | &nbsp;
+🔋 Energy Management &nbsp; | &nbsp;
+⚙️ Smart Grids & Power Electronics &nbsp; | &nbsp;
+🤖 Artificial Intelligence &nbsp; | &nbsp;
+🎓 Educational Research
+
+</p>
+
+<p>
+
+If you are interested in collaborative research, funded projects, journal special issues, book chapters, invited talks, or student research initiatives, please feel free to contact me through email or any of my research profiles.
+
+</p>
+
+</div>
+
+</section>
+
 <footer>
 
-© 2026 Dr. R. Manojkumar
+<h3>Dr. R. Manojkumar</h3>
+
+<p>
+
+Advancing Sustainable Power Systems through Intelligent Engineering and Educational Innovation
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Dr. R. Manojkumar. All Rights Reserved.
+
+</p>
 
 </footer>
 
 </body>
+
+</html>
+
+© 2026 Dr. R. Manojkumar | Academic Website
+
+</footer>
+
+</body>
+
 </html>
